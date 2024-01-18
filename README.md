@@ -21,6 +21,7 @@ This whole process is basically known as internet.
 - there is no specific full form of this.. its basically package manager... think like NodeJS is a device that have the capabitlity to run a server and npm is a playstore which contain various package which helps to run the server.
 ### Install npm..
 -npm i express
+### Instal ejs
 ### What is routs,router,routing?
 - /public or /contact or www.facebook.com/ this all "/" that e use is routs and this "/public" is known as router... and the code that we give to run this is known as routing.
 ### GET vs POST?
@@ -69,3 +70,17 @@ app.get('/contact', function (req, res) {
   res.render("contact");
 })
 just we have to use render insted of send and within that it should contain EJS file
+## Express generator
+- express generator ek folder baba ke detaa hai, jiska matlab aapko khudsee folder nahi babaa haai, to expreess generato saree files ko is folder mein daal deeegaa
+### Steps:
+- jivan mee ekbar laptop ke install karoo globaly
+npm i express-generator -g
+- to creat new app anywhere:
+open cmd move to desktop
+create new app:
+express appname --view=ejs
+- now use two comands
+cd appname
+npm i
+open it on vs code
+#### to run the code type npx nodemon in terminal
