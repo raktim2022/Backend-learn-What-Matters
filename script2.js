@@ -11,12 +11,14 @@ app.get('/contact', function (req, res) {
 app.get('/profile', function (req, res) {
   res.send('Hellooo to all');
 })
+//dynamic routes...
 app.get('/profile/:username', function (req, res) {
   res.send(`Heloo to ${req.params.username}`);
 })
 app.get('/cynthia', function (req, res) {
   res.render("cynthia");
 })
+//error handeling...
 app.get('/error', function (req, res) {
   throw Error()
 })
